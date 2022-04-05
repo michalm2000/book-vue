@@ -103,9 +103,7 @@ export default {
 	mounted(){
 		this.getAuthors()
 	},
-	created(){
-
-	}
+	
 	
 }
 </script>

@@ -65,6 +65,7 @@ export default {
 
     async postAuthor(pauthor){
       let data = pauthor
+      console.log(data)
       let request = new Request('http://localhost:8081/post/author',
 				{method: 'POST', body: JSON.stringify(data), headers: new Headers({'Content-Type': 'application/json; charset=UTF8'})})
 			

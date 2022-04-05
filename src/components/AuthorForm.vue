@@ -89,19 +89,15 @@ export default {
 		},
 
 		editAuthor(eauthor){
-			console.log(eauthor)
 			const retauthorId = eauthor.id
 			let retAuthor = {...eauthor}
+			console.log(retAuthor)
 			delete retAuthor.id
 			this.$emit('edit:author', retAuthor, retauthorId)
 			this.clearForm()
 		},
 
 	},
-	
-	created(){
-
-	}
 	
 }
 </script>
